@@ -1,0 +1,5 @@
+config.int :id, column: 1
+config.string :first_name, column: 2
+config.string :last_name, column: 3
+config.string :email, column: 4
+config.string :profession, column: 6

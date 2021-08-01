@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require_relative '../lib/simple_csv_import'
+
+records = CSVImport.from_file(ARGV[0]) do |config|
+    eval File.open(ARGV[1]).read
+end
+puts records
